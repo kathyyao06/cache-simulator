@@ -1,0 +1,29 @@
+Cache Simulator: Computer Systems
+
+This cache simulator implemented in C takes a Valgrind trace file and relevant cache parameters, outputting the expected number of hits, misses, and evictions for the trace file.
+
+Compile Code:
+    linux> make
+    macbook> make
+
+Test correctness:
+    linux> ./test-csim
+    macbook> ./test-csim-mac
+
+******
+Files:
+******
+
+
+csim.c       	Cache simulator
+Makefile        Builds the simulator
+README          This file
+driver.py*      The driver program, runs test-csim
+driver-mac.py*  The driver program for mac users, runs test-csim-mac
+cachelab.c      Helper functions
+cachelab.h      Header file
+csim-ref*       The executable reference cache simulator
+csim-ref-mac*   The executable reference cache simulator for Mac users
+test-csim*      Tests cache simulator
+test-csim-mac*  Tests cache simulator on mac
+traces/         Trace files used by test-csim.c
